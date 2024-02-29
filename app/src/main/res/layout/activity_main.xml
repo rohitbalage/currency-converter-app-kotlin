@@ -3,15 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="20sp"
     android:layout_height="match_parent"
     android:background="@drawable/currency"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/kilo_edit"
+        android:id="@+id/dollar_edittext"
         android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
         android:layout_height="wrap_content"
-        android:hint="Please enter the kilograms"
+        android:textSize="30sp"
+        android:hint="Please enter the dollars"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,11 +28,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:backgroundTint="@color/white"
-        android:text="Convert"
+        android:text="Convert to Rupees"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kilo_edit"
+        app:layout_constraintTop_toBottomOf="@+id/dollar_edittext"
         app:layout_constraintVertical_bias="0.183">
 
     </Button>
@@ -38,7 +43,7 @@
         android:layout_height="wrap_content"
         android:text="0"
         android:textColor="@color/white"
-        android:textSize="48sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
